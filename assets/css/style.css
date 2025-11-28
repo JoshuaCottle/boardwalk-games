@@ -15,8 +15,9 @@
 
 body {
     font-family: var(--primary-font);
+    padding-top: 57.15px; /* pushes the top of the header down under fixed navbar */
 }
-/* Page typography */
+
 h1,
 h2,
 h3 {
@@ -38,11 +39,36 @@ h2 {
 }
 
 .section {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    padding-top: 4rem; /* prevent navbar overlap */
 }
 
-/* Navbar styles */
+/* Buttons */
+
+.custom-button-filled {
+    border: 2px solid var(--highlight-color);
+    background-color: var(--highlight-color);
+    color: white;
+}
+
+.custom-button-filled:hover {
+    border: 2px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.custom-button-outline {
+    border: 3px solid var(--highlight-color);
+    padding: 7px 25px;
+    color: var(--highlight-color);
+}
+
+.custom-button-outline:hover {
+    background-color: var(--highlight-color);
+    color: white;
+}
+
+/* Navbar */
+
 #navbar {
     background-color: var(--primary-color);
 }
@@ -52,9 +78,11 @@ h2 {
 }
 
 /* Header */
+
 #header .lead {
     font-family: var(--secondary-font);
 }
+
 /* Services */
 
 #services .card-footer {
@@ -67,6 +95,26 @@ h2 {
     margin-bottom: 1.5rem;
 }
 
+/* Events */
+
+#events .table {
+    /* events table font size small enough that 
+      the table doesn't overflow on xs screens. 
+      Size set back to 1rem in a media query 
+      for sm screens and up */
+    font-size: 0.7rem;
+}
+
+.student-discount {
+    background-color: var(--highlight-color);
+    font-weight: bold;
+    color: white;
+    display: block;
+    max-width: 300px;
+    margin: auto;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+}
 /* Game library cards */
 
 #new-games .card,
@@ -99,6 +147,8 @@ h2 {
 #contact .social-links i {
     color: var(--highlight-color-light);
     font-size: 1.9rem;
+    -webkit-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
     transition: color 0.3s ease-in-out;
 }
 
@@ -106,19 +156,22 @@ h2 {
     color: var(--secondary-color);
 }
 
-/* grid visualisation CSS for testing (commented out) */
-/*
-.row {
-    border: 2px solid black;
+#contact .table-dark * {
+    background-color: transparent;
 }
-
-.col-12 {
-    border: 2px solid white;
-    background-color: lightgray;
-}
-*/
 
 /* Media queries */
+
+/* Small screens and up */
+@media screen and (min-width: 576px) {
+    /* increase font size in events table when screen size is large enough */
+    #events .table {
+        font-size: 1rem;
+    }
+    .student-discount {
+        font-size: 1rem;
+    }
+}
 
 /* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
