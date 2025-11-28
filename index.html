@@ -92,23 +92,34 @@
                             <a class="nav-link" href="game-libary.html">Games</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="booking.html" class="btn btn-primary ms-lg-3">Book now</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
 
+
         <!-- Header with carousel -->
         <header id="header" class="container section">
             <div class="row">
                 <div class="col-12 col-xl-6 text-center text-xl-start">
-                    <h1 class="display-3">Game library</h1>
-                    <p class="lead display-6 sub-heading-color">Discover new games to rent or buy</p>
-                    <p class="my-4">Dive into a world of adventure, strategy, and fun with our carefully curated
-                        collection
-                        of board games to rent or buy. From timeless classics to the latest sensations, our shelves are
-                        packed with games waiting to be discovered.</p>
+                    <h1 class="display-3">Boardwalk Games</h1>
+                    <p class="lead display-6 sub-heading-color">Your next adventure is waiting!</p>
+                    <p class="my-4">Welcome to Boardwalk Games, Your Ultimate Gaming Getaway! Escape into the world of
+                        board
+                        games and
+                        café delights. Whether you're a casual gamer seeking a cosy nook to unwind, a board game
+                        enthusiast
+                        ready for your next challenge, or a student gamer looking for a fun, affordable hangout, we've
+                        got
+                        you covered.</p>
+
+                    <a href="booking.html" class="btn btn-primary ms-lg-3">Book now</a>
+
                 </div>
                 <div class="col-12 col-xl-6">
                     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
@@ -153,31 +164,152 @@
             </div>
         </header>
 
-
         <!-- main element to hold all key sections of the home page. It is not part of the grid structure -->
         <main>
             <!-- Services section -->
-            <section class="container">
+            <section id="services" class="container section">
                 <div class="row">
-                    <div class="col-12">Services section heading</div>
-                    <div class="col-12 col-md-6 col-xl-3">Services card</div>
-                    <div class="col-12 col-md-6 col-xl-3">Services card</div>
-                    <div class="col-12 col-md-6 col-xl-3">Services card</div>
-                    <div class="col-12 col-md-6 col-xl-3">Services card</div>
+                    <div class="col-12 text-center">
+                        <h2 class="display-6">Services</h2>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <div class="card">
+                            <img src="assets/images/services-1.webp" class="card-img-top"
+                                alt="Boardwalk games cafe table by a window, stacks of boardgames can be seen on the table">
+                            <div class="card-body">
+                                <h3 class="card-title sub-heading-color">Play in our cafe</h3>
+                                <p class="card-text">
+                                    Enjoy a relaxing atmosphere while diving into exciting board
+                                    games with friends. Indulge in our cosy café offerings, from
+                                    aromatic coffees to savory snacks.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <p class="mb-0">€7 per person</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <div class="card">
+                            <img src="assets/images/services-2.webp" class="card-img-top"
+                                alt="Board games stacked in bookshelves, a man can be seen browsing the shelves" />
+                            <div class="card-body">
+                                <!-- bootstrap cards come as h5 by default, changed to h3 to fit project heading hierarchy -->
+                                <h3 class="card-title sub-heading-color">Game library</h3>
+                                <p class="card-text">
+                                    Explore our collection of board games, ranging from classic
+                                    favorites to the latest releases. Find the perfect game for
+                                    any age, skill level, or interest.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <p class="mb-0">See prices in store</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <div class="card">
+                            <img src="assets/images/services-3.webp" class="card-img-top">
+                            <div class="card-body">
+                                <h3 class="card-title sub-heading-color">Events</h3>
+                                <p class="card-text">
+                                    Join us for special game nights, tournaments, and themed
+                                    events. A great opportunity to meet new people and test your
+                                    gaming skills.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <p class="mb-0">From €5 per person</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <div class="card">
+                            <img src="assets/images/services-4.webp" class="card-img-top"
+                                alt="A kids party being held at Boardwalk Games">
+                            <div class="card-body">
+                                <h3 class="card-title sub-heading-color">Kids parties</h3>
+                                <p class="card-text">
+                                    Celebrate your child's special day with us! We offer fun,
+                                    game-filled party packages that are sure to delight young
+                                    gamers and their friends.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <p class="mb-0">From €7 per child</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
 
         <!-- Footer / contact section -->
         <!-- mt-auto added to push footer to the bottom of the page -->
-        <footer class="mt-auto">
-            <div class="container">
+        <footer id="contact" class="mt-auto">
+            <div class="container section">
                 <div class="row justify-content-center">
-                    <div class="col-12">Contact section heading</div>
+                    <div class="col-12 text-center">
+                        <h2 class="display-6">Contact us!</h2>
+                    </div>
                     <!-- Contact info -->
-                    <div class="col-12 col-md-6 col-xl-4">Contact info & social links</div>
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <h3 class="sub-heading-color">Contact info</h3>
+                        <address>
+                            <strong><i class="fa-solid fa-location-dot"></i> Boardwalk Games</strong><br>
+                            123 Boardwalk<br>
+                            Boardwalk City, 12345
+                        </address>
+                        <p><i class="fa-solid fa-phone"></i> 012 345 6789<br>
+                            <i class="fa-regular fa-paper-plane"></i> info@boardwalk-games.co
+                        </p>
+                        <div class="social-links mt-4">
+                            <a href="https://www.instagram.com" target="_blank"
+                                aria-label="Visit our Instagram page (opens in a new tab)" rel="noopener"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.facebook.com" target="_blank"
+                                aria-label="Visit our Facebook page (opens in a new tab)" rel="noopener"><i
+                                    class="fa-brands fa-square-facebook"></i></a>
+                            <a href="https://www.x.com" target="_blank"
+                                aria-label="Visit our X feed (opens in a new tab)" rel="noopener"><i
+                                    class="fa-brands fa-x-twitter"></i></a>
+                        </div>
+                    </div>
+
                     <!-- Opening times -->
-                    <div class="col-12 col-md-6 col-xl-4">Opening times</div>
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <h3 class="sub-heading-color">Opening times</h3>
+                        <table class="table table-dark">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Day</th>
+                                    <th scope="col">Open</th>
+                                    <th scope="col">Close</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Mon</th>
+                                    <td colspan="2">Closed</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Tue - Thur</th>
+                                    <td>11am</td>
+                                    <td>11pm</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Fri - Sat</th>
+                                    <td>11am</td>
+                                    <td>12am</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Sun</th>
+                                    <td>12pm</td>
+                                    <td>7pm</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </footer>
